@@ -22,9 +22,9 @@
   <div class="card">
     <div id="content"></div>
   </div>
-  <!-- 加载 README.md 并渲染 -->
+  <!-- 加载 README_en.md 并渲染 -->
   <script>
-    fetch('README.md')
+    fetch('README_en.md')
       .then(response => response.text())
       .then(markdown => {
         document.getElementById('content').innerHTML = marked.parse(markdown);
