@@ -1,15 +1,15 @@
-# 欢迎来到 小雅Alist
+# 欢迎来到 ApHeQua758页面
+### LANG
+- [English](./README_en.md)
+- 中文
+## 关于 小雅Alist 的信息
 ### 重要信息
 - 由于**ClawCloudRun**最近出现一些问题导致我们无法正常使用，所以**ClawCloudRun**将会开始维修（[相关链接](https://question.run.claw.cloud/questions/10010000000001421)），**ClawCloudRun**维修时间是7月7日（周一）10:00 – 20:00北京时间。
 - 维修期间可能会把``Guest home``全部文件将会删除，请做好备份。
 - 最近维修后服务器出现了一些延迟问题，但很快会修好的。
-### LANG
-- [English](./README_en.md)
-- 中文
 #### 使用软件：[DigitalPlat](https://domain.digitalplat.org) / [CloudFlare](https://cloudflare.com) / [ClawCloudRun](https://run.claw.cloud) *内部有限制，但不影响你使用*
 内含**Aria2**
-### 注意
-此📂仅共享🧑‍🤝‍🧑，只有10GB，请联系管理员来更改文件夹！
+## 其他信息
 ### 连接缩短器
 [Sleeky Yourls](https://syourls.hsha1312.dpdns.org/)
 ### VPN
