@@ -1,4 +1,4 @@
-# Welcome to 小雅Alist
+# Welcome to ApHeQua758 page
 ### LANG
 - English
 - [中文](/)
