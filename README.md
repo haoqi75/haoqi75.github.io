@@ -33,6 +33,7 @@ Docker镜像从``xhofe/alist``改成了``alist666/alist``，若你是Docker安�
 [Scratch Turbowarp Tools](https://sbwbt.haoqi75.ip-ddns.com/) / 
 [博客](https://miblog.haoqi75.ip-ddns.com/) / 
 [Aria2-Ariang下载器](https://aria2-ariang.haoqi75.ip-ddns.com/) / 
+[MoonTV](https://mtv.haoqi75.qzz.io/)([私人版](mtv-p.haoqi75.dpdns.org)) / 
 [LibreTV](https://lt.qtdt.eu.cc/)``(登录后获取密码)`` / 
 电报图床([连接](https://tph.haoqi75.qzz.io/)/[电报](https://t.me/hqtpho)) / 
 [SubsTracker订阅管理系统](https://github.com/wangwangit/SubsTracker/tree/master) / 
