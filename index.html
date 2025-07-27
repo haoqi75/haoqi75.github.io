@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My GitHub Page</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- 使用 Marked.js 渲染 Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div id="content"></div>
+  <script>
+    fetch('README.md')
+      .then(response => response.text())
+      .then(markdown => {
+        document.getElementById('content').innerHTML = marked.parse(markdown);
+      });
+  </script>
+</body>
+</html>
