@@ -1,7 +1,7 @@
 # Welcome to 小雅Alist
 ### LANG
 - English
-- [中文](./README.md)
+- [中文](/)
 #### Software used: [DigitalPlat](https://domain.digitalplat.org) / [CloudFlare](https://cloudflare.com) / [ClawCloudRun](https://run.claw.cloud) *There are internal restrictions, but it does not affect your use*
 Includes **Aria2**
 ### Please note

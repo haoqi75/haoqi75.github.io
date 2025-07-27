@@ -1,6 +1,6 @@
 # 欢迎来到 ApHeQua758页面
 ### LANG
-- [English](./README_en.md)
+- [English](/index_en.html)
 - 中文
 ## 关于 小雅Alist 的信息
 ### 重要信息
