@@ -2,21 +2,13 @@
 ### LANG
 - [English](/index_en.html)
 - 中文
-## 关于 小雅Alist 的信息
-### 重要信息
-- 由于**ClawCloudRun**最近出现一些问题导致我们无法正常使用，所以**ClawCloudRun**将会开始维修（[相关链接](https://question.run.claw.cloud/questions/10010000000001421)），**ClawCloudRun**维修时间是7月7日（周一）10:00 – 20:00北京时间。
-- 维修期间可能会把``Guest home``全部文件将会删除，请做好备份。
-- 最近维修后服务器出现了一些延迟问题，但很快会修好的。
-#### 使用软件：[DigitalPlat](https://domain.digitalplat.org) / [CloudFlare](https://cloudflare.com) / [ClawCloudRun](https://run.claw.cloud) *内部有限制，但不影响你使用*
-内含**Aria2**
-## 其他信息
+## [所有应用](/apps)
 ### 连接缩短器
 [Sleeky Yourls](https://syourls.hsha1312.dpdns.org/)
 ### VPN
 [v2rayN下载](https://github.com/2dust/v2rayN/releases/download/7.12.5/v2rayN-windows-64-desktop.zip) / [v2rayNG下载](https://github.com/2dust/v2rayNG/releases/download/1.10.4/v2rayNG_1.10.4_arm64-v8a.apk) / [免费VPN Worker](https://hqvpn.dpdns.org/cloudvpnpass) / [S瓜式懒人文件](https://syourls.hsha1312.dpdns.org/gr1xn1)
 ### 注意
-- 由于Google单机登录注册限制，100个用户后将不再支持注册。
-- Alist暂时不会再更新，版本为（请看公告），最新版为![Releases](https://img.shields.io/github/v/release/Xhofe/alist.svg)，因为很可能已经卖给某个公司了，目前未知程序有没有投毒，若你使用Alist话，请不要升级到最新版本。
+- 我将会停用Alist，因为很可能已经卖给某个公司了，目前未知程序有没有投毒，若你使用Alist话，请不要升级到最新版本。
 Alist组织从``alist-org``改成了``AlistGo``，官网也从[alist.nn.ci](https://alist.nn.ci)改成了[alistgo.com](https://alistgo.com)。
 Docker镜像从``xhofe/alist``改成了``alist666/alist``，若你是Docker安装Alist话，请建议使用``xhofe/alist:v3.44.0``或更低版本使用。
 [相关信息](https://www.freedidi.com/19598.html)
@@ -28,6 +20,7 @@ Docker镜像从``xhofe/alist``改成了``alist666/alist``，若你是Docker安�
 [网页管理](https://al.qtdt.dpdns.org/) / [网页浏览](https://web.qtdt.dpdns.org/)
 ### 其他连接你可能想看
 [Github](https://github.com/haoqi75) / 
+[小雅Alist](https://alist.haoqi75.dpdns.org) / 
 [安慰小屋🏡](https://anwen-anyi.github.io/) / 
 [应用列表](https://page.haoqi75.ip-ddns.com/) / 
 [Scratch Turbowarp Tools](https://sbwbt.haoqi75.ip-ddns.com/) / 
