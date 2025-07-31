@@ -3,7 +3,8 @@
 ### LANG
 - [English](/index_en.html)
 - 中文
-![所有应用](./MyApps.gif)](/apps)
+## 首页
+[![所有应用](./MyApps.gif)](/apps)
 ### 连接缩短器
 [Sleeky Yourls](https://syourls.hsha1312.dpdns.org/)
 ### VPN
