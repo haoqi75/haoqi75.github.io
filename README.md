@@ -20,7 +20,8 @@ Docker镜像从``xhofe/alist``改成了``alist666/alist``，若你是Docker安�
 - **MoonTV**注册可以使用，无限制。但若用户违反规则导致出现问题将会封号，而用户承受所有责任，跟我和作者无关。
 - 被管理员授权的账号密码在[这里](https://alist.haoqi75.dpdns.org/Onedrive/aphequa758/PASSWORD.md)，请勿创改，后果自负！
 ### 云盘
-[小雅Alist](https://alist.haoqi75.dpdns.org)
+[开发列表(OpenList)](https://openlist.haoqi75.dpdns.org)
+[云端储存](https://opl.qtdt.dpdns.org/)
 ### 其他连接你可能想看
 [Github](https://github.com/haoqi75) / 
 [安慰小屋🏡](https://anwen-anyi.github.io/) / 
