@@ -22,7 +22,7 @@ Docker镜像从``xhofe/alist``改成了``alist666/alist``，若你是Docker安�
 - 若想使用**MoonTV**，请跟管理员联系或自己部署[MoonTV](https://github.com/senshinya/MoonTV)。
 - 被管理员授权的账号密码在[这里](https://alist.haoqi75.dpdns.org/Onedrive/aphequa758/PASSWORD.md)，请勿创改，后果自负！
 ### 云盘
-[开发列表(OpenList)](https://openlist.haoqi75.dpdns.org)
+[开发列表(OpenList)](https://openlist.haoqi75.dpdns.org) / 
 [云端储存](https://opl.qtdt.dpdns.org/)
 ### 其他连接你可能想看
 [Github](https://github.com/haoqi75) / 
@@ -31,7 +31,7 @@ Docker镜像从``xhofe/alist``改成了``alist666/alist``，若你是Docker安�
 [Scratch Turbowarp Tools](https://sbwbt.haoqi75.ip-ddns.com/) / 
 [博客](https://miblog.haoqi75.ip-ddns.com/) / 
 [Aria2-Ariang下载器](https://aria2-ariang.haoqi75.ip-ddns.com/) / 
-[MoonTV](https://mtv.qtdt.dpdns.org/)([私人版](https://mtv-p.bisebre.dpdns.org)/~~[私人CF版](https://mtv-p.bisebre.qzz.io))~~ / 
+[MoonTV](https://mtv.qtdt.dpdns.org/) / 
 [LibreTV](https://lt.haoqi75.dpdns.org/)``(登录后获取密码)`` / 
 电报图床([连接](https://tph.haoqi75.qzz.io/)/[电报](https://t.me/hqtpho)) / 
 [SubsTracker订阅管理系统](https://github.com/wangwangit/SubsTracker/tree/master) / 
