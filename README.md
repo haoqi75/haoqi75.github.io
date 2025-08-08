@@ -17,10 +17,10 @@ Docker镜像从``xhofe/alist``改成了``alist666/alist``，若你是Docker安�
 - 现在出现了新的解决方案：[OpenList](https://docs.oplist.org)，也就是说，Alist的朋友。此服务器会转向为它用来代替小雅Alist。[新网盘连接](https://opls.haoqi75.qzz.io)（现在已经完美支持到服务器了，以后会开始启用。[相关链接](https://question.run.claw.cloud/questions/10010000000001316)）。
 - **顶级注意**！每当OpenList能正常使用的话，此服务器将永久停止运行。在Guest home里的文件或文件夹将会消失，请做好备份。
 - **LibreTV密码**将不会共用共享，免黑客或盗取代码。现在需要**登录**或**注册**账号而且已被管理员激活(更改文件夹)才可以看到密码。
-- **MoonTV**~~注册可以使用，无限制。~~需要注册请在管理员申请，但若用户违反规则导致出现问题将会封号，而用户承受所有责任，跟我和作者无关。
+- **MoonTV**~~注册可以使用，无限制~~需要注册请在管理员申请，但若用户违反规则导致出现问题将会封号，而用户承受所有责任，跟我和作者无关。
 - 由于**MoonTV**CloudFlare版出现大量用户被封号，临时将会在Vencel和Updash里面部署。因此，这里的MoonTV将不会再开放。
-- 若想使用**MoonTV**，请跟管理员联系或自己部署[MoonTV](https://github.com/senshinya/MoonTV)。
-- 被管理员授权的账号密码在[这里](https://alist.haoqi75.dpdns.org/Onedrive/aphequa758/PASSWORD.md)，请勿创改，后果自负！
+- 若想使用**MoonTV**，请跟管理员联系或自己部署[MoonTV](https://github.com/LunaTechLab/MoonTV)。
+- 被管理员授权的账号密码在[这里](https://openlist.haoqi75.dpdns.org/Onedrive/aphequa758/PASSWORD.md)，请勿创改，后果自负！
 ### 云盘
 [开发列表(OpenList)](https://openlist.haoqi75.dpdns.org) / 
 [云端储存](https://opl.qtdt.dpdns.org/)
