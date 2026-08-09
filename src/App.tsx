@@ -1,6 +1,8 @@
 // src/App.tsx
 import React, { useState, useEffect } from 'react';
 import GithubProfile from './components/GithubProfile';
+import { CustomHead } from './customHead';
+import { CustomBody } from './customBody';
 import './index.css';
 
 type ThemeMode = 'light' | 'dark' | 'auto';
@@ -54,6 +56,10 @@ const App: React.FC = () => {
   };
 
   return (
+    <>
+    {/* 自定义头部（实际注入到 <head> 中） */}
+    <CustomHead />
+    
     <div className="app">
       <header>
         <h1>🏠 我的主页面</h1>
@@ -82,10 +88,14 @@ const App: React.FC = () => {
       <main>
         <GithubProfile />
       </main>
-      <footer>
-        <p>Data provided by <a href="https://github.com" target="_blank">GitHub</a></p>
+      <footer style={{ textAlign: 'center', padding: '10px', background: 'rgba(0,0,0,0.05)', marginTop: '20px' }}>
+        <p>数据由 <a href="https://github.com" target="_blank">GitHub</a> 获取, AI创建, </p>
+        <p>使用 <a href="https://github.com/haoqi75/haoqi75.github.io" target="_blank">haoqi75.github.io</a>, 由 ❤ by <a href="https://github.com/haoqi75" target="_blank">haoqi75</a>创建.</p>
       </footer>
     </div>
+    {/* 自定义底部（通过 Portal 挂载到 document.body 末尾） */}
+    <CustomBody />
+    </>
   );
 };
 
