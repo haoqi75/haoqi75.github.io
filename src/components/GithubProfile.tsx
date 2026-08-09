@@ -47,8 +47,6 @@ const GithubProfile: React.FC = () => {
   // 当 user 数据更新时，触发展示数字从 0 到目标值的过渡
   useEffect(() => {
     if (user) {
-      setDisplayStats({ repos: 0, followers: 0, following: 0 });
-      // 使用 requestAnimationFrame 确保 DOM 更新后触发过渡
       requestAnimationFrame(() => {
         setDisplayStats({
           repos: user.public_repos,

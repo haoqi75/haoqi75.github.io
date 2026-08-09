@@ -1,16 +1,8 @@
 // src/customBody.tsx
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { createPortal } from 'react-dom';
 
 export const CustomBody = () => {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null; // 确保只在客户端挂载
-
   return createPortal(
     <div id="custom-body-bottom">
       {/* 在这里放任何你想要添加到 <body> 底部的内容 */}
