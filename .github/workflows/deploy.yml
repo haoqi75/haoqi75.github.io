@@ -17,10 +17,10 @@ concurrency:
 
 jobs:
   build:
-    name: Build job
+    name: Build and deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
         
       - name: Setup Pages
@@ -39,26 +39,14 @@ jobs:
       - name: Install Dependencies
         run: pnpm install
         
-      - name: Build page and tools
+      - name: Build page
         run: pnpm run build
-      
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./dist
-          destination: ./_site
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-
-  deploy:
-    name: Deployment job
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
+        with:
+          path: './dist'
+          
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
