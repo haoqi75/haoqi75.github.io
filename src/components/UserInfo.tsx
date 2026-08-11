@@ -19,9 +19,9 @@ const UserInfo: React.FC<Props> = ({ user, displayStats }) => {
         <p className="login">@{user.login}</p>
         {user.bio && <p className="bio">{user.bio}</p>}
         <div className="stats">
-          <span>📦 <span className="stat-number">{displayStats.repos}</span> repos</span>
-          <span>👥 <span className="stat-number">{displayStats.followers}</span> followers</span>
-          <span>👤 <span className="stat-number">{displayStats.following}</span> following</span>
+          <span>📦 <span className="stat-number">{displayStats.repos}</span> repos (仓库)</span>
+          <span>👥 <span className="stat-number">{displayStats.followers}</span> followers (关注者)</span>
+          <span>👤 <span className="stat-number">{displayStats.following}</span> following (关注)</span>
         </div>
         <div className="links">
           <a href={user.html_url} target="_blank" rel="noopener noreferrer">GitHub</a>
