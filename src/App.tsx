@@ -1,59 +1,31 @@
 // src/App.tsx
 import React, { useState, useEffect } from 'react';
-import GithubProfile from './components/GithubProfile';
+import type { User } from './types';
+import UserInfo from './components/UserInfo';
+import { customContentHTML } from './customContent';
+import userData from './data/user.json';
+import { useTheme } from './hooks/useTheme';
+import './index.css';
+import './animation.css';
+
 import { CustomHead } from './customHead';
 import { CustomBody } from './customBody';
-import './index.css';
-
-type ThemeMode = 'light' | 'dark' | 'auto';
 
 const App: React.FC = () => {
-  // 从 localStorage 读取保存的主题，默认为 'auto'
-  const [theme, setTheme] = useState<ThemeMode>(() => {
-    const saved = localStorage.getItem('theme') as ThemeMode | null;
-    return saved || 'auto';
-  });
+  const [user] = useState<User>(userData as User);
+  const [displayStats, setDisplayStats] = useState({ repos: 0, followers: 0, following: 0 });
+  const { theme, handleThemeChange } = useTheme();
 
-  // 实际应用的主题（'light' 或 'dark'），由当前系统主题和用户选择共同决定
-  const [appliedTheme, setAppliedTheme] = useState<'light' | 'dark'>('light');
-
+  // 数字动画效果
   useEffect(() => {
-    // 检测系统主题
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const getSystemTheme = () => (mediaQuery.matches ? 'dark' : 'light');
-
-    // 更新实际应用的主题
-    const updateAppliedTheme = () => {
-      if (theme === 'auto') {
-        setAppliedTheme(getSystemTheme());
-      } else {
-        setAppliedTheme(theme);
-      }
-    };
-
-    updateAppliedTheme();
-
-    // 监听系统主题变化（只在 auto 模式下需要更新）
-    const handleSystemChange = () => {
-      if (theme === 'auto') {
-        setAppliedTheme(getSystemTheme());
-      }
-    };
-
-    mediaQuery.addEventListener('change', handleSystemChange);
-    return () => mediaQuery.removeEventListener('change', handleSystemChange);
-  }, [theme]);
-
-  // 将实际主题应用到 document 的 data-theme 属性
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', appliedTheme);
-  }, [appliedTheme]);
-
-  // 切换主题并保存
-  const handleThemeChange = (newTheme: ThemeMode) => {
-    setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
-  };
+    requestAnimationFrame(() => {
+      setDisplayStats({
+        repos: user.public_repos,
+        followers: user.followers,
+        following: user.following,
+      });
+    });
+  }, [user]);
 
   return (
     <>
@@ -83,13 +55,21 @@ const App: React.FC = () => {
           >
             🔄 自动
           </button>
+          <a href="/repo.html" className="theme-btn">📂 查看所有仓库</a>
         </div>
       </header>
       <main>
-        <GithubProfile />
+        <div className="profile-content">
+          <UserInfo user={user} displayStats={displayStats} />
+          
+          <div className="custom-content-section">
+          <h2>📝 自定义内容</h2>
+            <div className="custom-content-preview" dangerouslySetInnerHTML={{ __html: customContentHTML }} />
+          </div>
+        </div>
       </main>
       <footer style={{ textAlign: 'center', padding: '10px', background: 'rgba(0,0,0,0.05)', marginTop: '20px' }}>
-        <p>数据由 <a href="https://github.com" target="_blank">GitHub</a> 获取, AI创建, </p>
+        <p>数据由 <a href="https://github.com" target="_blank">GitHub</a> 获取, AI创建, 最后更新: {new Date().toLocaleDateString()}</p>
         <p>使用 <a href="https://github.com/haoqi75/haoqi75.github.io" target="_blank">haoqi75.github.io</a>, 由 ❤ by <a href="https://github.com/haoqi75" target="_blank">haoqi75</a>创建.</p>
       </footer>
     </div>

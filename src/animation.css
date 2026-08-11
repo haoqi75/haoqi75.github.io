@@ -1,4 +1,5 @@
 /* src/animation.css - 所有装饰性动画 */
+@import "tailwindcss";
 
 /* ===== 入场动画：从下方淡入 ===== */
 @keyframes slideUpFadeIn {

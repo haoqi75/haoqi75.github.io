@@ -1,4 +1,5 @@
 /* src/index.css */
+@import "tailwindcss";
 /* 定义全局变量（默认亮色） */
 :root {
   /* 背景与文字 */
@@ -441,10 +442,18 @@ footer a {
 
 /* 响应式调整 */
 @media (max-width: 700px) {
+  body {
+    padding: 8px; /* 从 20px 减到 8px */
+  }
+  .app {
+    padding: 8px; /* 从 20px 减到 8px */
+  }
+  /* 用户头部布局调整 */
   .user-header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 16px; /* 减少间距 */
   }
   .user-info .bio {
     max-width: 100%;
@@ -452,21 +461,45 @@ footer a {
   .stats {
     justify-content: center;
   }
+  /* 统计标签字体稍小 */
+  .stats span {
+    font-size: 0.85rem;
+    padding: 4px 12px;
+  }
   .links {
     justify-content: center;
   }
   .repo-list {
     grid-template-columns: 1fr;
   }
-  .profile-content {
-    padding: 20px;
+  /* 仓库卡片内边距减少 */
+  .repo-card {
+    padding: 14px;
   }
+  .profile-content {
+    padding: 16px; /* 从 35px 减到 16px */
+  }
+  /* 头像适当缩小 */
   .avatar {
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
   }
   .avatar-ring {
-    width: 122px;
-    height: 122px;
+    width: 112px;
+    height: 112px;
+    top: -4px;
+    left: -4px;
+  }
+  /* 自定义内容区内边距减少 */
+  .custom-content-section {
+    padding: 14px;
+  }
+
+  /* 标题字号缩小 */
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.4rem;
   }
 }
