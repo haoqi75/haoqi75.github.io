@@ -1,0 +1,4 @@
+packages:
+  - '404page'
+allowBuilds:
+  '@parcel/watcher': true
